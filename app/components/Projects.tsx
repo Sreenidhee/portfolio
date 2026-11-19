@@ -41,7 +41,7 @@ export default function Projects() {
 
       {/* ── Featured projects ── */}
       <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
-        {projects.map((project, i) => {
+        {projects.slice(0, 3).map((project, i) => {
           const isEven = i % 2 === 0;
           return (
             <div
@@ -249,7 +249,7 @@ export default function Projects() {
                   }}
                 >
                   <a
-                    href={`https://github.com/Sreenidhee`}
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="View on GitHub"
@@ -286,8 +286,8 @@ export default function Projects() {
             gap: "16px",
           }}
         >
-          {/* Both projects also shown as cards for discoverability */}
-          {projects.map((project, i) => (
+          {/* Remaining projects as cards */}
+          {projects.slice(3).map((project, i) => (
             <div key={i} className="project-card">
               {/* Header */}
               <div
@@ -303,7 +303,7 @@ export default function Projects() {
                 </span>
                 <div style={{ display: "flex", gap: "12px" }}>
                   <a
-                    href="https://github.com/Sreenidhee"
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"

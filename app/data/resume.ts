@@ -1,33 +1,33 @@
 export const profile = {
   name: "Sreenidhee Vidya Modugu",
   title: "Software Engineer",
-  tagline: "Building performance-sensitive systems, backend applications, and full-stack solutions across defense research and enterprise environments.",
+  tagline: "Building backend systems and ML pipelines end to end, from production enterprise applications to Go, Kafka and Redis backends and computer-vision models.",
   location: "Gainesville, FL",
-  email: "modugus@ufl.edu",
+  email: "sreenidheevidya03@gmail.com",
   phone: "+1 352 246 3624",
   linkedin: "https://linkedin.com/in/sreenidhee-vidya-modugu",
   github: "https://github.com/Sreenidhee",
   summary:
-    "Software Engineer with experience building performance-sensitive C/C++ software, backend applications, enterprise systems, and full-stack web applications across defense research and enterprise environments. Hands-on with algorithm design, performance optimization, debugging, testing, database systems, and production issue resolution. M.S. Computer Science, University of Florida.",
+    "Software Engineer with ML and computer vision experience: built a YOLOv8 detection pipeline in PyTorch over ~20,000 images at DRDO, raising accuracy ~25% through preprocessing and systematic evaluation, and sped up critical paths ~20% in C++. Brings 2 years of production engineering at Accenture (Java, REST APIs, CI/CD, on-call) plus Go, Kafka, and Redis backends.",
 };
 
 export const skills = {
-  Languages: ["C++", "C", "Python", "Java", "JavaScript", "SQL", "Go", "Gosu"],
-  Backend: ["Django", "REST APIs", "Guidewire", "Authentication & Authorization", "CRUD"],
-  Frontend: ["React.js", "HTML", "CSS", "Bootstrap"],
-  Databases: ["MySQL", "PostgreSQL", "NoSQL"],
-  "Cloud & Infrastructure": ["AWS", "Docker", "Kubernetes", "Linux"],
+  Languages: ["Java", "Python", "Go", "C++", "C", "JavaScript", "SQL", "Gosu"],
+  "Distributed Systems & Backend": ["Microservices", "REST APIs", "Kafka", "Redis Pub/Sub", "WebSockets", "Django", "Guidewire"],
+  Frontend: ["React.js", "HTML", "CSS"],
+  Databases: ["PostgreSQL", "MySQL", "DynamoDB", "Redis"],
+  "Cloud & DevOps": ["AWS (EC2, S3, Lambda, RDS, DynamoDB, IAM, CloudWatch)", "Docker", "Kubernetes", "Linux", "CI/CD", "Git"],
+  "ML / Computer Vision": ["PyTorch", "TensorFlow", "YOLOv8", "OpenCV", "NumPy", "Pandas", "Deep Belief Networks", "CNNs"],
+  "LLMs & GenAI": ["RAG", "Embeddings", "Vector Search", "Prompt Engineering"],
   Engineering: [
     "Data Structures & Algorithms",
-    "OOP",
-    "Algorithm Design",
-    "Testing",
-    "Debugging",
-    "Performance Optimization",
-    "Distributed Systems",
-    "OS",
+    "Object-Oriented Design",
+    "Unit / Integration / Regression Testing",
+    "Profiling",
+    "Observability",
+    "On-call & Root-Cause Analysis",
+    "Agile / SDLC",
   ],
-  "ML / Computer Vision": ["PyTorch", "TensorFlow", "YOLOv8", "OpenCV", "NumPy", "Pandas"],
 };
 
 export const experience = [
@@ -36,14 +36,13 @@ export const experience = [
     role: "Software Engineer — Packaged App Development Associate",
     period: "Aug 2024 – Jul 2026",
     location: "India",
-    tech: ["Guidewire", "Gosu", "Java", "SQL", "REST", "Functional/Regression Testing"],
+    tech: ["Java", "Gosu", "Guidewire", "SQL", "REST APIs", "CI/CD", "On-call", "Regression Testing"],
     highlights: [
-      "Developed and customized Guidewire applications using Gosu and configuration frameworks, implementing business logic for enterprise policy and billing workflows across multiple modules; coordinated production releases with consistent, well-structured code.",
-      "Built and integrated backend application components and database-driven workflows, translating detailed business requirements into maintainable, production-ready functionality across enterprise modules and downstream services.",
-      "Implemented CRUD workflows, validation logic, authentication and authorization, and data-processing components across enterprise application modules, ensuring correctness and consistency throughout core business services.",
-      "Debugged complex application issues spanning business logic, configuration, and data layers, performing systematic root-cause analysis and implementing fixes that reduced recurring defects, downtime, and manual intervention.",
-      "Delivered application enhancements across multiple enterprise releases, collaborating with developers, business stakeholders, and QA engineers throughout the full SDLC — from design and implementation to deployment.",
-      "Developed a metrics dashboard to consolidate application and operational KPIs, giving stakeholders centralized visibility into system performance, workflow trends, defect patterns, and release health across modules.",
+      "Owned features for production Guidewire policy and billing applications in Java and Gosu end to end, from requirements and design through code review, testing, and CI/CD deployment, coordinating releases with QA and business teams.",
+      "Built REST API integration workflows connecting application modules, relational databases, and downstream services, enabling consistent, validated data exchange between the policy, billing, and other connected enterprise systems.",
+      "Implemented authentication, authorization, validation, and data-processing components in Java and Gosu to enforce access controls and data correctness across production applications; reviewed peers' code for correctness and maintainability.",
+      "Served in the on-call production support rotation, troubleshooting issues across business-logic, configuration, and data layers, and used root-cause analysis to ship fixes that reduced repeat defects and manual intervention.",
+      "Built an operational metrics dashboard tracking application KPIs, defect patterns, and release health, and authored technical documentation for features and fixes, improving release readiness and visibility for engineering leads and stakeholders.",
     ],
   },
   {
@@ -51,46 +50,85 @@ export const experience = [
     role: "Software Engineer Intern",
     period: "Jan 2024 – Jun 2024",
     location: "India",
-    tech: ["C++", "C", "Python", "Linux", "PyTorch", "YOLOv8", "OpenCV", "Profiling"],
+    tech: ["Python", "PyTorch", "YOLOv8", "OpenCV", "C++", "C", "Linux", "Profiling"],
     highlights: [
-      "Developed performance-sensitive C++ software on Linux, optimizing computationally intensive preprocessing and image-processing workflows for large-scale aircraft imagery datasets used in downstream detection and evaluation tasks.",
-      "Profiled application execution to locate computational bottlenecks and reimplemented critical processing paths in C++, improving computational performance by ~20% over the baseline while preserving output correctness.",
-      "Developed and evaluated computer-vision algorithms and preprocessing pipelines for aircraft imagery, improving algorithmic accuracy by ~25% through iterative experimentation, parameter tuning, and systematic evaluation.",
-      "Built an object-detection pipeline (YOLOv8, PyTorch) over ~20,000 aircraft images spanning dataset preparation, model training, inference, and evaluation; validated end-to-end with unit and integration testing, profiling, and code reviews.",
+      "Built a YOLOv8 computer vision pipeline in PyTorch over ~20,000 aircraft images, from data prep to evaluation.",
+      "Designed preprocessing pipelines for unstructured image data and ran systematic experiments and parameter tuning across model configurations and training runs, improving detection accuracy by approximately 25% over the initial baseline.",
+      "Profiled computational bottlenecks and reimplemented performance-critical paths in C++ on Linux, improving performance by approximately 20% over baseline while preserving output correctness, verified with unit and integration tests.",
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "Alumni Networking System",
+    title: "Async Feed Backend (Reddit-style)",
+    github: "https://github.com/Sreenidhee/feed-engine",
     description:
-      "A full-stack alumni networking platform supporting user registration, profile management, event creation, job postings, and alumni discovery — built over a normalized relational database with clean separation between layers.",
-    tech: ["Django", "React.js", "MySQL", "REST APIs"],
+      "A distributed feed service: posts and likes flow through Kafka, consumer workers fan out to per-user Redis feeds, and the API serves feeds from Redis sorted sets for low-latency reads.",
+    tech: ["Go", "Kafka", "Redis", "PostgreSQL", "Docker"],
     highlights: [
-      "Engineered a normalized MySQL schema with clean separation between the frontend, API, and data layers.",
-      "Developed backend workflows in Django with role-based authentication and authorization, exposing REST APIs that connect React.js frontend interactions to server-side business logic and persistent relational data.",
-      "Built responsive React.js interfaces with search and multi-attribute filtering to discover alumni by graduation year, industry, and related attributes — with paginated CRUD-driven results.",
+      "Designed fault-tolerant fan-out with idempotent, at-least-once Kafka consumers that commit offsets only after successful processing and retry transient failures with exponential backoff.",
+      "Added a transactional-outbox flag so post events are re-published if Kafka is unavailable, and a per-user likes table so repeated likes and replayed events are no-ops.",
+      "Partitioned topics so multiple consumer replicas share load; the whole stack runs with one docker compose command.",
     ],
-    category: "Full-Stack",
+    category: "Distributed Systems",
+  },
+  {
+    title: "Real-Time Chat Service",
+    github: "https://github.com/Sreenidhee/Real-Time-Chat-Service",
+    description:
+      "A one-to-one real-time chat app with a Go WebSocket gateway, Redis-backed message history and contact lists, and a React front end.",
+    tech: ["Go", "WebSockets", "Redis", "React"],
+    highlights: [
+      "Built a Go WebSocket server that persists each message to Redis and pushes it to the sender's and recipient's open connections in real time.",
+      "Exposed REST endpoints for registration, login, contact lists sorted by last activity, and chat history.",
+      "Built the React + Chakra UI client with login, contact management, and a live chat view.",
+    ],
+    category: "Backend / Real-Time",
   },
   {
     title: "Deep Learning Architecture for Iris Recognition",
+    github: "https://github.com/Sreenidhee/Iris-Recognition",
     description:
-      "A biometric recognition pipeline combining a Deep Belief Network with Gabor-filter feature extraction to capture discriminative iris texture patterns across multiple evaluation datasets.",
+      "An end-to-end biometric recognition pipeline combining Gabor-filter feature extraction with a Deep Belief Network to classify iris images.",
     tech: ["Python", "TensorFlow", "OpenCV", "NumPy"],
     highlights: [
-      "Combined a Deep Belief Network with Gabor-filter feature extraction (OpenCV, NumPy) to capture discriminative iris texture patterns across multiple evaluation datasets.",
-      "Achieved 86% classification accuracy (82% F1, 87% recall, 80% precision) with 100% specificity and 87% sensitivity.",
-      "Structured into reproducible preprocessing, feature-extraction, training, and evaluation stages for clean scientific reproducibility.",
+      "Built an end-to-end iris recognition pipeline spanning image preprocessing, feature extraction, model training, and evaluation.",
+      "Combined Gabor-filter feature extraction (OpenCV, NumPy) with a Deep Belief Network in TensorFlow to classify iris images.",
+      "Built an evaluation harness measuring model quality across datasets: 86% accuracy, 82% F1, 87% recall, and 80% precision.",
     ],
     metrics: {
       accuracy: "86%",
       f1: "82%",
       recall: "87%",
-      specificity: "100%",
+      precision: "80%",
     },
     category: "ML / Computer Vision",
+  },
+  {
+    title: "PEGASUS Dialogue Summarizer",
+    github: "https://github.com/Sreenidhee/PEGASUS-Summarizer",
+    description:
+      "Fine-tuned google/pegasus-large on the SAMSum dataset to condense long conversations into concise, abstractive summaries.",
+    tech: ["Python", "Hugging Face Transformers", "PyTorch"],
+    highlights: [
+      "Built the fine-tuning and evaluation pipeline for abstractive dialogue summarization.",
+      "Reached ROUGE-1 52.4, ROUGE-L 44.8 and BERTScore F1 89.2 on held-out test data.",
+    ],
+    category: "ML / NLP",
+  },
+  {
+    title: "Alumni Networking System",
+    github: "https://github.com/Sreenidhee/Alumni-Networking-System",
+    description:
+      "A full-stack alumni platform with admin, alumni and student roles: profile management, event posts, comments, and alumni discovery.",
+    tech: ["Django", "React.js", "MySQL", "REST APIs"],
+    highlights: [
+      "Engineered a normalized MySQL schema with clean separation between the frontend, API, and data layers.",
+      "Developed Django backend workflows with role-based authentication and authorization, exposed through REST APIs.",
+      "Built React.js interfaces with search and filtering to discover alumni by graduation year, industry, and interests.",
+    ],
+    category: "Full-Stack",
   },
 ];
 
@@ -100,6 +138,8 @@ export const education = [
     location: "Gainesville, FL",
     degree: "Master of Science",
     field: "Computer and Information Science",
+    period: "Aug 2026 – Dec 2027",
+    coursework: "Advanced Data Structures, Analysis of Algorithms, Distributed Operating Systems",
     gpa: null,
   },
   {
@@ -107,6 +147,8 @@ export const education = [
     location: "Hyderabad, India",
     degree: "Bachelor of Engineering",
     field: "Computer Science & Engineering",
+    period: "Aug 2020 – Jun 2024",
+    coursework: "Data Structures & Algorithms, OOP in Java, Artificial Intelligence, Machine Learning, DBMS, Data Mining, Software Engineering",
     gpa: "8.68 / 10.0",
   },
 ];

@@ -109,7 +109,7 @@ export default function Hero() {
               color: "var(--text-muted)",
             }}
           >
-            M.S. CS — University of Florida
+            M.S. CIS — University of Florida · Dec 2027
           </span>
         </div>
 

@@ -32,18 +32,19 @@ export default function About() {
         {/* Text column */}
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ color: "var(--light-slate)", lineHeight: 1.75 }}>
-            I&apos;m a software engineer with a background in building performance-sensitive C/C++ systems,
-            backend applications, and full-stack web platforms across{" "}
+            I&apos;m a software engineer who builds backend systems and ML pipelines end to end, with
+            experience in production Java services, Go/Kafka/Redis backends, and computer vision across{" "}
             <span style={{ color: "var(--lightest-slate)" }}>defense research</span> and{" "}
-            <span style={{ color: "var(--lightest-slate)" }}>enterprise environments</span>. I hold
-            an M.S. in Computer Science from the{" "}
-            <span className="inline-link" style={{ cursor: "default" }}>University of Florida</span>.
+            <span style={{ color: "var(--lightest-slate)" }}>enterprise environments</span>. I&apos;m
+            currently pursuing an M.S. in Computer and Information Science at the{" "}
+            <span className="inline-link" style={{ cursor: "default" }}>University of Florida</span>{" "}
+            (graduating Dec 2027) and am open to SDE and ML engineering roles.
           </p>
           <p style={{ color: "var(--light-slate)", lineHeight: 1.75 }}>
-            At <span style={{ color: "var(--lightest-slate)" }}>Accenture</span>, I developed and
-            customized enterprise Guidewire applications — implementing business logic, debugging
-            complex cross-layer issues, and delivering across the full SDLC in close collaboration
-            with business stakeholders and QA engineers.
+            For two years at <span style={{ color: "var(--lightest-slate)" }}>Accenture</span>, I owned
+            features for production Guidewire policy and billing applications in Java and Gosu — from
+            design and code review through CI/CD deployment — built REST integration workflows, and
+            served on the on-call production support rotation.
           </p>
           <p style={{ color: "var(--light-slate)", lineHeight: 1.75 }}>
             At <span style={{ color: "var(--lightest-slate)" }}>DRDO</span>, I built
@@ -135,6 +136,7 @@ export default function About() {
                 {edu.school}
               </p>
               <p style={{ fontSize: "12px", color: "var(--slate)" }}>{edu.location}</p>
+              <p style={{ fontSize: "12px", color: "var(--slate)", marginTop: "2px" }}>{edu.period}</p>
               {edu.gpa && (
                 <p
                   style={{
